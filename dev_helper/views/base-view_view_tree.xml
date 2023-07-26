@@ -8,7 +8,7 @@
             <field name="inherit_id" ref="base.view_view_tree"/>
             <field name="arch" type="xml">
                 <field name="type" position="after">
-                    <field name="groups_id" widget="many2many_skills_tags"/>
+                    <field name="groups_id" widget="many2many_tags"/>
                     <field name="mode"/>
                     <!--<field name="model_ids" widget="many2many_skills_tags"/>-->
                     <!--<field name="model_data_id"/>-->

@@ -11,8 +11,8 @@
                     <field name="inherited_model_ids" string="inherited_model_ids"/>
                     <field name="modules" string="modules"/>
                     <field name="info"/>
-                    <field name="view_ids" string="view_ids" widget="many2many_skills_tags"/>
-                    <field name="access_ids" string="access_ids" widget="many2many_skills_tags"/>
+                    <field name="view_ids" string="view_ids" widget="many2many_tags"/>
+                    <field name="access_ids" string="access_ids" widget="many2many_tags"/>
                 </field>
             </field>
         </record>

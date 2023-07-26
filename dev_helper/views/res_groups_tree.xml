@@ -15,7 +15,7 @@
                     <field name="rule_groups" widget="many2many_tags" string="rule_groups"/>
                     <field name="trans_implied_ids" widget="many2many_tags" string="trans_implied_ids"/>
                     <field name="view_access" widget="many2many_tags" string="view_access"/>
-                    <field name="model_access" widget="many2many_skills_tags" string="model_access"/>
+                    <field name="model_access" widget="many2many_tags" string="model_access"/>
                                 <field name="implied_ids" widget="many2many_tags" string="implied_ids"/>
                                 <field name="users" widget="many2many_tags" string="users"/>
                 </tree>
