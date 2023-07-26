@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="res_groups_tree" model="ir.ui.view">
+            <field name="name">res.groups.tree</field>
+            <field name="model">res.groups</field>
+            <!--<field name="inherit_id" ref="base.view_users_form"/>-->
+            <field name="arch" type="xml">
+                <tree>
+                                <field name="name"/>
+                                <field name="external_id_name"/>
+                    <field name="menu_access" widget="many2many_tags" string="menu_access"/>
+                    <field name="menu_no_access" widget="many2many_tags" string="menu_no_access"/>
+                    <field name="rule_groups" widget="many2many_tags" string="rule_groups"/>
+                    <field name="trans_implied_ids" widget="many2many_tags" string="trans_implied_ids"/>
+                    <field name="view_access" widget="many2many_tags" string="view_access"/>
+                    <field name="model_access" widget="many2many_skills_tags" string="model_access"/>
+                                <field name="implied_ids" widget="many2many_tags" string="implied_ids"/>
+                                <field name="users" widget="many2many_tags" string="users"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</openerp>

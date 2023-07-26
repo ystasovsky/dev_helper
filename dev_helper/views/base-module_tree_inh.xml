@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="base_module_tree_inh" model="ir.ui.view">
+            <field name="name">base.module.tree.inh</field>
+            <field name="model">ir.module.module</field>
+            <field name="inherit_id" ref="base.module_tree"/>
+            <field name="arch" type="xml">
+                <field name="state" position="after">
+                     <field name="dependencies_id" widget="many2many_skills_tags"/>
+                     <field name="dependent_ids" widget="many2many_skills_tags"/>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="base_edit_menu_inh" model="ir.ui.view">
+            <field name="name">base.edit.menu.inh</field>
+            <field name="model">ir.ui.menu</field>
+            <field name="inherit_id" ref="base.edit_menu"/>
+            <field name="arch" type="xml">
+                <field name="complete_name" position="after">
+                    <field name="groups_id" widget="many2many_skills_tags"/>
+                    <field name="no_groups" widget="many2many_skills_tags"/>
+                    <field name="child_id" widget="many2many_skills_tags"/>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>

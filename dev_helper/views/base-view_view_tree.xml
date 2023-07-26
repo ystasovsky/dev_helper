@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="base_view_view_tree_inh" model="ir.ui.view">
+            <field name="name">base.view.view.tree.inh</field>
+            <field name="model">ir.ui.view</field>
+            <field name="inherit_id" ref="base.view_view_tree"/>
+            <field name="arch" type="xml">
+                <field name="type" position="after">
+                    <field name="groups_id" widget="many2many_skills_tags"/>
+                    <field name="mode"/>
+                    <!--<field name="model_ids" widget="many2many_skills_tags"/>-->
+                    <!--<field name="model_data_id"/>-->
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>
