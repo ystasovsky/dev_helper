@@ -7,10 +7,9 @@
     'summary': """Reveal some useful fields in views for ir.model, ir.model.fields, etc, for helping developers in theirs problem solving processes""",
 
     'category': 'Developer',
-    'version': '15.08',
+    'version': '15.09',
 
-    'depends': ['base', 'group_menu_no_access', 'hr_holidays'],
-    # 'depends': ['base', 'group_menu_no_access'],
+    'depends': ['base', 'group_menu_no_access'],
 
     'data': [
         'views/base-view_model_form.xml',
