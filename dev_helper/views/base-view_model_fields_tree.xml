@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_model_fields_tree_dev_helper_inh" model="ir.ui.view">
+            <field name="name">view.model.fileds.tree.dev.helper.inh</field>
+            <field name="model">ir.model.fields</field>
+            <field name="inherit_id" ref="base.view_model_fields_tree"/>
+            <field name="arch" type="xml">
+                <field name="state" position="after">
+                    <field name="modules"/>
+                    <field name="external_id_name"/>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>

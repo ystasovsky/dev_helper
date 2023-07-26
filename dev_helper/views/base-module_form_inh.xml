@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="base_module_form_inh" model="ir.ui.view">
+            <field name="name">base.module.form.inh</field>
+            <field name="model">ir.module.module</field>
+            <field name="inherit_id" ref="base.module_form"/>
+            <field name="arch" type="xml">
+ <!--               <group string="Dependencies" position="before"> -->
+<field name="views_by_module" position="after">
+                    <group string="Dependent Modules">
+                        <field name="dependent_ids"/>
+                    </group>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>
