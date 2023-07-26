@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<!--    <data noupdate="1">-->
+    <data>
+        <record id="group_menu_full_access" model="res.groups">
+            <field name="name">Full Menu Access</field>
+            <field name="comment">This group members bypass current module logic: all denied by this module menus for theese users(members of this group) are not denied. Membership of this group also does not
+            give access for menus which are invisible in state, where this module not installed. </field>
+            <field name="users" eval="[(4, ref('base.user_root'))]"/>
+        </record>
+    </data>
+</openerp>

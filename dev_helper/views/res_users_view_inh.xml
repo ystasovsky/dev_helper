@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="res_users_xxx_inh" model="ir.ui.view">
+            <field name="name">res.users.xxx.inh</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                <field name="active" position="after">
+                    <group>
+                        <!--<field name="groups_id_normal" string="Groups NORMAL view" widget="many2many_tags"/>-->
+                        <field name="groups_id_normal" string="Groups NORMAL view">
+                            <tree>
+                                <field name="name"/>
+                                <field name="external_id_name"/>
+                                <field name="implied_ids" widget="many2many_skills_tags"/>
+                                <field name="trans_implied_ids" widget="many2many_tags" invisible="1"/>
+                                <field name="parent_groups" widget="many2many_skills_tags"/>
+                                <field name="trans_parent_groups" widget="many2many_skills_tags"/>
+                                <field name="users" widget="many2many_skills_tags" invisible="1"/>
+                            </tree>
+                        </field>
+                    </group>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>
